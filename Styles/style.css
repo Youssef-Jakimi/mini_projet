@@ -80,9 +80,7 @@ body{
     text-decoration:none;
     font-weight: bold;
     font-size:large;
-    display: grid;
-    justify-content: center;
-    align-items: center;
+    
   }
   /* .Upcomming{
     color: #9DC08B ;
