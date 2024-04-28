@@ -1,0 +1,286 @@
+html{
+  margin: 0;
+ width: 100%;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #9DC08B;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+.banner{
+    width: 100%;
+    height: 750%;
+  }
+.logo{
+    position:absolute;top: 1%;left: 2% ;
+    height: 80px;
+}
+.button5 {
+  background-color: #40513B; 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 10px;
+  height: 40px;
+  width: 90px;
+  font-weight: 700;
+
+}.button {
+  background-color: #40513B; 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 10px;
+  height: 40px;
+  width: 180px;
+  font-weight: 700;
+
+}
+
+  .signin {
+    background-color: #9DC08B;
+    color: #40513B;
+    border: 2px solid #40513B;
+    position: relative; top: -650%; right: -80%;
+ }
+  .signin:hover {
+    background-color: #40513B;
+    color: white;
+  }
+  .signup {
+    background-color: #9DC08B;
+    color: #40513B;
+    border: 2px solid #40513B;
+    position: relative; top: -650%; right: -82%;
+}
+  .signup:hover {
+    background-color: #40513B;
+    color: white;
+  }
+   
+  .home ,.Upcomming,.Contact{
+    color: #9DC08B ;
+     /* position: relative; right: -10%;top: -750%; */
+    margin : 20px;
+    text-align: center;
+    text-decoration:none;
+    font-weight: bold;
+    font-size:large;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  /* .Upcomming{
+    color: #9DC08B ;
+    position: relative; right: -10%;top: -750%;
+    margin : 20px;
+    text-align: center;
+    text-decoration:none;
+    font-weight: bold;
+    font-size:large;
+  }
+  .Contact {
+    color: #9DC08B ;
+    position: relative; right: -10%;top: -750%;
+    margin : 20px;
+    text-align: center;
+    text-decoration:none;
+    font-weight: bold;
+    font-size:large; 
+  }*/
+  .main{
+    height:450px;
+    
+
+  }
+  .ucl,.botola,.stade{
+    height: 400px;
+
+
+  }
+  hr.style8 {
+    border-top: 1px solid #8c8b8b;
+    border-bottom: 1px solid #fff;
+  }
+  hr.style8:after {
+    content: '';
+    display: block;
+    margin-top: 2px;
+    border-top: 1px solid #8c8b8b;
+    border-bottom: 1px solid #fff;
+  }
+.top{
+  height: 20px;
+}
+.img-main{
+  height: 300px;
+  position: absolute;top: 14%;left: 10%;
+  padding: 0;
+  border-radius: 20px;
+  margin: 0;
+}
+.slogan{
+  position: absolute; top: 17%; left: 40%;
+}
+.buy-main {
+  background-color: #9DC08B;
+  color: #40513B;
+  width: 200px;
+  height: 80px;
+  border: 2px solid #40513B;
+  position: absolute; top: 25%; left: 70%;
+}
+.buy-main:hover {
+  background-color: #40513B;
+  color: white;
+}
+.ucl-png{
+  position: relative;top: 10%; left: 55%;
+}
+.centered-square {
+  text-align: center ;
+  padding: 10px;
+  margin: auto;
+  font-weight: 600;
+  line-height: 30px ;
+  border-collapse: collapse;
+  width:350px ; /* Largeur  */
+  position: relative;left: -20%;top: -65%;
+  
+}
+.botola-png{
+  position: relative;top: 8%; left: 20%;
+  height: 330px;
+  border-radius: 20px;
+}
+.centered-square2 {
+  text-align: center ;
+  padding: 10px;
+  margin: auto;
+  border-collapse: collapse;
+  width:350px ; 
+  position: relative;left: 20%;top: -75%;
+  line-height: 30px ;
+  font-weight: 900;
+  
+}
+.stade-png{
+  position: relative; left: 25%;
+  height: 370px;
+  border-radius: 20px;
+}
+.seat{
+  position: absolute;top: 200%;left: 8%;
+  font-weight: 1200;
+  width: 100px;
+  text-align: center;
+  line-height: 40px;
+}
+.button1 {
+  background-color: #40513B; 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 10px;
+  height: 120px;
+  width: 60px;
+  position: absolute; top: 205%;right: 5%;
+  line-height: 40px;
+  font-weight: 700;
+}
+.button:hover {
+  background-color: #40513B;
+  color: white;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  max-height: 80px;
+  margin: 30px;
+  text-align: center;
+
+}
+footer {
+  background-color: #333; 
+  color: #fff; 
+  padding: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+.foot{
+  text-align: center;
+  position: absolute;bottom: 0%;
+  align-items: center;
+
+}
+
+.hr1 {
+  border: none;
+  height: 5px;
+  rotate: -4deg ;
+  background: linear-gradient(to right, #76885B, #627254); 
+  margin: 20px ; 
+  width: 100%;
+}
+.hr2 {
+  border: none;
+  height: 5px;
+  rotate: 4deg ;
+  background: linear-gradient(to right, #76885B, #627254); 
+  margin: 20px ; 
+  width: 100%;
+
+}
+.in-up{
+  position: absolute; top: 50%; left: 50%;transform: translate(-50%,-50%);
+  align-items: center;
+  align-content: center;
+  background-color: #40513B;
+  border-radius: 10px;
+  padding: 30px;
+  padding-bottom: 100px;
+  color: #fff;
+  line-height: 23px;
+}
+.sub {
+  background-color: #9DC08B;
+  color: #40513B;
+  border: 2px solid #40513B;
+  position: absolute; bottom: 40px;
+}
+.sub:hover {
+  background-color: #40513B;
+  color: white;
+}
+.disc{
+ position: absolute; bottom: 5px;
+ font-size: x-small;
+}
