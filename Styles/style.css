@@ -74,7 +74,7 @@ body{
    
   .home ,.Upcomming,.Contact{
     color: #9DC08B ;
-     /* position: relative; right: -10%;top: -750%; */
+    position: relative; right: -10%;top: -750%;
     margin : 20px;
     text-align: center;
     text-decoration:none;
