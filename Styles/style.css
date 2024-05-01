@@ -98,7 +98,7 @@ body {
         display: none;
     }
     .stade,
-    .botola {
+    .botola,.ucl {
         flex-direction: column;
     }
 }
@@ -118,7 +118,12 @@ body {
         width: 50%;
     }
     .img-main,.botola-png, .ucl-png {
-        height: 13em;
+        height: fit-content;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        
     }
 }
 .ucl,
@@ -165,12 +170,7 @@ hr.style8:after {
     background-color: #40513b;
     color: white;
 }
-.ucl-png {
-    position: absolute;
-    bottom: 0;
-    right: 15px;
-    width: 23%;
-}
+
 .centered-square {
     text-align: center;
     padding: 10px;
@@ -179,7 +179,7 @@ hr.style8:after {
     line-height: 30px;
     width: 350px;
 }
-.botola-png {
+.botola-png,.ucl-png {
     height: 330px;
     border-radius: 20px;
     max-width: fit-content;
@@ -190,24 +190,12 @@ hr.style8:after {
 }
 .seat {
     font-weight: bold;
-    width: 100px;
     text-align: center;
     line-height: 40px;
+    display: inline-block;
+    word-spacing: 100vw;
 }
-.button1 {
-    background-color: #40513b;
-    border: none;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 10px;
-    height: 120px;
-    width: 60px;
-    line-height: 20px;
-    font-weight: 700;
-}
+
 .button:hover {
     background-color: #40513b;
 }
@@ -224,21 +212,22 @@ hr.style8:after {
 .flex-container > div {
     background-color: #f1f1f1;
     max-height: 80px;
-    margin: 30px;
+    margin: 10px;
     text-align: center;
 }
 footer {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
+    margin-top: 40px;
     position: fixed ;bottom: 0;
     width: 100%;
 }
 .foot {
     background-color: #333;
     color: #fff;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 10px;
+    margin-top: 40px;
     position: relative ;bottom: 0;
     width: 100%;
 }
@@ -293,8 +282,6 @@ footer {
     background-color: #40513b;
     color: white;
 }
-.disc {
-    position: absolute;
-    bottom: 5px;
-    font-size: x-small;
+.partner-img{
+    width: 130px;
 }
