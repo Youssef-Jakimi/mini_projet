@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    
 }
 .nav {
     display: flex;
@@ -16,7 +17,6 @@ body {
     justify-content: space-between;
     padding: 5px 10px 10px;
     position: relative;
-    margin-left: 25%;
 
 }
 .logo img {
@@ -84,7 +84,6 @@ body {
 
 .main {
     position: relative;
-    /* height: 450px; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -130,33 +129,20 @@ body {
     }
 }
 .ucl,
-.botola,
-.stade {
+.botola,.stade
+ {
     position: relative;
     display: flex;
 }
-.stade {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-hr.style8 {
-    border-top: 1px solid #8c8b8b;
-    border-bottom: 1px solid #fff;
-}
-hr.style8:after {
-    content: "";
-    display: block;
-    margin-top: 2px;
-    border-top: 1px solid #8c8b8b;
-    border-bottom: 1px solid #fff;
-}
+
+
 
 .banner {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
+    max-height: 15%;
     z-index: -1;
 }
 .img-main {
@@ -182,15 +168,16 @@ hr.style8:after {
     line-height: 30px;
     width: 350px;
 }
-.botola-png,.ucl-png {
-    height: 330px;
+.botola-png,.ucl-png,.stade-png {
+    height: fit-content;
     border-radius: 20px;
     max-width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
 }
-.stade-png {
-    width: 24em;
-    border-radius: 20px;
-}
+
 .seat {
     font-weight: bold;
     text-align: center;
@@ -294,3 +281,36 @@ footer {
 .partner-img{
     width: 130px;
 }
+.container-ticket{
+    width: 90%;
+    display: grid;
+    padding: 10px;
+    position: relative;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+}
+.ticket{
+    background-color: #609966;
+    margin:10px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 15px;
+    height: 200px;
+
+}
+
+.Mhome{
+    width: 100px;
+    height: 120px;
+    position: absolute;left: 0;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+.away{
+    width: 100px;
+    height: 120px;
+    position: absolute;right: 0;
+    margin-right: 5%;
+    margin-top: 1%;}

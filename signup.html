@@ -4,11 +4,14 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="Styles/style.css" />
+        <script src="JS/javas.js"></script>
+
         <title>Football</title>
     </head>
     <body>
+        <img class="banner" src="img/banner.png" />
+
         <div class="nav">
-            <img class="banner" src="img/banner.png" />
 
             <div>
                 <a href="index.html" class="home">Home</a>
@@ -26,20 +29,19 @@
         </div>
 <section class="in-up">
     <h3> SIGN UP : </h3>
-    <form>
-          
-        <pre><input type="radio" value= "Mademoiselle" name="formation"> Mlle  <input type="radio" value= "Madame"name="formation" > Mme  <input type="radio" value= "Monsieur" name="formation"> Mr </pre>  
-<input type="texte" placeholder="Votre Nom Complet" class="in-up-form"><br>
-<input type="email" placeholder="Email" class="in-up-form"> <br>
-<input type="text" placeholder="CIN" class="in-up-form"><br>
-<input type="password" placeholder="Password" class="in-up-form"><br>
-<input type="password" placeholder="Re-Enter Password" class="in-up-form">
+    <form action="Back-end/connect.php" method="post">
+          <br>
+        <input type="texte" name="Fname" placeholder="Votre Nom Complet" class="in-up-form" required >
+        <input type="email" name="email" placeholder="Email" class="in-up-form" required> 
+        <input type="text" name="CIN" placeholder="CIN" class="in-up-form" required>
+        <input type="password" name="password" id="password" placeholder="Password" class="in-up-form" required>
+        <input type="password" id="rpassword" placeholder="Re-Enter Password" class="in-up-form" required>
 
+        <input  type="submit" onclick="validerpsw()" class="button5 sub"> 
 
         
     </form>
 
-<input  type="submit" value="Sign up" class="button5 sub"> 
 </section>
 <footer>
     <p>
