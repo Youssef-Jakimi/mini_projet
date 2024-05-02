@@ -16,6 +16,8 @@ body {
     justify-content: space-between;
     padding: 5px 10px 10px;
     position: relative;
+    margin-left: 25%;
+
 }
 .logo img {
     width: 50px;
@@ -26,6 +28,7 @@ body {
 .nav .logo + div {
     display: flex;
     gap: 20px;
+    
 }
 
 .button5 {
@@ -87,12 +90,12 @@ body {
     justify-content: space-around;
 }
 @media (max-width: 667px) {
-    .nav {
-        flex-direction: column;
-        gap: 10px;
-    }
+     .nav {
+        
+    }  
     .nav div a {
         font-size: 16px;
+        
     }
     .logo {
         display: none;
@@ -254,8 +257,6 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    align-items: center;
-    align-content: center;
     background-color: #40513b;
     border-radius: 10px;
     padding: 30px;
@@ -264,19 +265,27 @@ footer {
     line-height: 23px;
     width: fit-content;
     min-width: 80%;
+  
 }
 .in-up-form{
     width: 80%;
     border-radius: 5px;
     margin: 3px;
     padding: 10px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
 }
 .sub {
     background-color: #9dc08b;
     color: #40513b;
     border: 2px solid #40513b;
-    position: absolute;
+    position: absolute;left: 50%;
+    transform: translate(-50%, -50%);
     bottom: 40px;
+    width: 25%;
+    
 }
 .sub:hover {
     background-color: #40513b;
