@@ -178,7 +178,7 @@ body {
     width: fit-content;
 }
 .stade-png {
-    height: 350px;
+    height: 300px;
     border-radius: 20px;
     max-width: fit-content;
     display: block;
@@ -326,6 +326,7 @@ footer {
 .DNHA{
     position: absolute;bottom: 2%;
 }
+<<<<<<< HEAD
 .button3{
     position: relative; top: 125px;
     margin-left: auto;margin-right: auto;
@@ -406,3 +407,5 @@ footer {
   .form-container .btn:hover, .open-button:hover {
     opacity: 1;
   }
+=======
+>>>>>>> bbb2f9adebd20fbebfc60bc7b698ad479d3856f5
