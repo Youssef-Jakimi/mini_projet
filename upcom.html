@@ -31,20 +31,40 @@
             <section class="ticket">
                 <div><img class="Mhome" src="img/rma.png"></div>
                 <div><img class="away"  src="img/fcb.png"></div>
+                <div><a href="upcom.html"><button class="button3 button" onclick="openForm()">BUY NOW</button></a></div>
             </section>
 
             <section class="ticket">
                 <div><img class="Mhome" src="img/rca.png"></div>
                 <div><img class="away"  src="img/wac.png"></div>
+                <div><a href="upcom.html"><button class="button3 button" onclick="openForm()">BUY NOW</button></a></div>
+
             </section>
 
             <section class="ticket">
                 <div><img class="Mhome" src="img/fcb.png"></div>
                 <div><img class="away"  src="img/bay.png"></div>
+                <div><a href="upcom.html"><button class="button3 button" onclick="openForm()">BUY NOW</button></a></div>
+
             </section>
 
             
+            <div class="form-popup" id="myForm">
+                <form action="" class="form-container">
+                  <h1>Login</h1>
+              
+                  <input type="texte" name="Fname" placeholder="Votre Nom Complet" class="in-up-form" required >
+                    <input type="email" name="email" placeholder="Email" class="in-up-form" required> 
+                    <input type="text" name="CIN" placeholder="CIN" class="in-up-form" required>
+                    <input type="password" name="password" id="password" placeholder="Password" class="in-up-form" required>
+                    <input type="password" id="rpassword" placeholder="Re-Enter Password" class="in-up-form" required>
+            
+                  <button type="submit" class="btn" onclick="validerpsw()">Submit</button>
+                  <button type="button" class="btn cancel" onclick="closeForm()">X</button>
+                </form>
+              </div>
 
+              
 
 
 
