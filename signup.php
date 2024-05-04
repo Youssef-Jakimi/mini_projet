@@ -4,7 +4,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "test";
+$database = "projet_ticket";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);
@@ -21,22 +21,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $CIN = $_POST["CIN"];
     $Fname = $_POST["Fname"];
     $email = $_POST["email"];
-    $password = $_POST["password"]; // You should hash this password before storing it in the database
+    $password = $_POST["password"];
+    $rpassword = $_POST["rpassword"];
+    $sql = "SELECT * FROM users WHERE CIN = '$CIN'";
+    $result = $conn->query($sql);
 
-    // Hash the password for security
-    // $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-
-    // Prepare SQL statement to insert user data into database
-    $sql = "INSERT INTO users (CIN,Fname, email, password) VALUES ('$CIN','$Fname' ,'$email', '$password')";
-
-    if ($conn->query($sql) === TRUE) {
-        echo "User registered successfully";
+    if ($result->num_rows > 0) {
+        header("Location: signin.html");
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-    }
+        if ($password !== $rpassword) {
+            echo "Passwords do not match";
+            exit;
+        }else{
+            // Prepare SQL statement to insert user data into database
+            $sql = "INSERT INTO users (CIN,Fname, email, password) VALUES ('$CIN','$Fname' ,'$email', '$password')";
 
+            if ($conn->query($sql) === TRUE) {
+                    echo "User registered successfully";
+                } else {
+                    echo "Error: " . $sql . "<br>" . $conn->error;
+            }
+        
+        }
+}
 }
 
-// Close connection
-$conn->close();
 ?>
