@@ -2,11 +2,7 @@
 
 require_once 'db.php';
 
-
-
-// Process registration form data
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Collect form data
     $CIN = $_POST["CIN"];
     $Fname = $_POST["Fname"];
     $email = $_POST["email"];
@@ -30,7 +26,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </script>
             <?php
         }else{
-            // Prepare SQL statement to insert user data into database
             $sql = "INSERT INTO users (CIN,Fname, email, password) VALUES ('$CIN','$Fname' ,'$email', '$password')";
 
             if ($conn->query($sql) === TRUE) {

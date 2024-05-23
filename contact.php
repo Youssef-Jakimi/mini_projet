@@ -3,15 +3,8 @@ require_once 'db.php';
 ?>
 <?php
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
 
-
-// Process registration form data
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Collect form data
     $CIN = $_POST["CIN"];
     $Nom = $_POST["Nom"];
     $Messages = $_POST["Messages"];

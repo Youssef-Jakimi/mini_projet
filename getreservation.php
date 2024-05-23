@@ -1,13 +1,11 @@
 <?php
 require_once 'db.php';
 ?>
-<!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="Styles/style.css" />
-        <script src="script.js"></script>
 
         <title>Football</title>
     </head>
@@ -32,7 +30,7 @@ require_once 'db.php';
             </div>
         </div>
 <div class="in-up">
-    <h3> Historique : </h3><br><br>
+    <h3> Vos Achats : </h3><br><br>
     <form action="" method="post">
           
         <input type="text" name="CIN" placeholder="CIN" class="in-up-form" required><br>
@@ -45,10 +43,9 @@ require_once 'db.php';
     </form>
     <p class="DNHA">Don't have an account ? <a href="signup.html">Register</a></p>
 </div>
-    <div  class="container-ticket">
-        <div style="margin-top:60vh">
+    <div style="margin-top:70vh" class="container-ticket">
      <?php
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+         if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $CIN = $_POST['CIN'];
         $password = $_POST['password'];
         
@@ -58,7 +55,7 @@ require_once 'db.php';
         if ($result->num_rows > 0) {
             $row = $result->fetch_assoc();
             if ($password=== $row['password']) {
-                $sql = "SELECT * FROM reservation R,gameplay P WHERE R.CIN = $CIN AND P.game_id=R.game_id";
+                $sql = "SELECT * FROM reservation R,gameplay P WHERE R.CIN = '$CIN' AND P.game_id=R.game_id";
                 $result = $conn->query($sql);
                 if ($result->num_rows > 0) {
                     while ($row = $result->fetch_assoc()) {
@@ -66,7 +63,7 @@ require_once 'db.php';
                         <div class="ticket">
                             <div style="width:fit-content;height:fit-content;position : absolute; margin-top : 70px" class="Mhome" ><?php echo $row["home"]; ?></div>
                             <div style="display:flex;justify-content:center; margin-top : 20px" ><?php echo $row["stade"]; ?><br><br>VS<br><br><?php echo $row["date"]; ?></div>
-                            <div style="width:fit-content;height:fit-content;position : absolute; margin-top :-110px; " class="away"><?php echo $row["away"]; ?></div>
+                            <div style="width:fit-content;height:fit-content;position : absolute;right:5%; margin-top :-130px; " class="away"><?php echo $row["away"]; ?></div>
                             
                          </div>
                         <?php
@@ -83,18 +80,11 @@ require_once 'db.php';
             </script>
         <?php
         }
-}
+} 
+?>
 
-
-    
-        
-    
-
-     ?>
-
-        </div>
     </div>
-<footer>
+<footer class="foot">
     <p>
         Fédération royale marocaine de football | Tous droits réservés ©
         2024

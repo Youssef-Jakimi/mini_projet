@@ -35,18 +35,16 @@ require_once 'db.php';
             <?php
 
 
-// Retrieve matches from the database
 $sql = "SELECT * FROM gameplay";
 $result = $conn->query($sql);
 
-// Display matches with predefined CSS design
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         ?>
         <div class="ticket">
             <div style="width:fit-content;height:fit-content;position : absolute; margin-top : 20px" class="Mhome" ><?php echo $row["home"]; ?></div>
             <div style="display:flex;justify-content:center; margin-top : 20px" >VS<br><?php echo $row["stade"]; ?><br><?php echo $row["date"]; ?></div>
-            <div style="width:fit-content;height:fit-content;position : absolute; margin-top :-110px; " class="away"><?php echo $row["away"]; ?></div>
+            <div style="width:fit-content;height:fit-content;position : absolute;right:5%; margin-top :-110px; " class="away"><?php echo $row["away"]; ?></div>
             <div><a href="reserveticket.php"><button class=" button" ><?php echo $row["prix"] ," DH - "?>BUY NOW</button></a></div>
 
          </div>
